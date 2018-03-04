@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>D3Times</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.7.3/d3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-md-12 col-md-offset-0">
+				<div class="container">
+					<h1 class="display-3">D3 Times</h1>
+					<h2>Demographics and Health Care Outcomes: An Analysis By State <h2>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class = "instructions">
+			<p>Click on the axes labels to change the graph</p>
+			</div>
+		<div class="row">
+			<div class="col-xs-12  col-md-9 col-md-offset-0">
+				<!-- <div class="embed-responsive embed-responsive-16by9"> -->
+					<div class="iframeContainer">
+					<iframe src = "d3.html"></iframe>	<!-- Students: Add a responsive iframe here that includes the d3.html file -->
+					</div>
+				<!-- </div> -->
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12  col-md-9 col-md-offset-0">
+				<br>
+				<div class="article">
+					<h3>About the Data</h3>
+					<p><strong>Demographic Variables:</strong> 
+						<a href = "https://factfinder.census.gov/faces/nav/jsf/pages/searchresults.xhtml">
+						U.S. Census Bureau's American Community Survey, 2014 one-year estimates
+						</a>
+					</p>
+					<p><strong>Health Outcome Variables:</strong>
+						<a href="https://chronicdata.cdc.gov/Behavioral-Risk-Factors/BRFSS-2014-Overall/5ra3-ixqq">
+						Behavioral Risk Factor Surveillance System, 2014
+						</a>
+					</p>
+					<br>
+					<h3>Correlations</h3>
+					<p><strong>Strong Correlations</strong></p>
+					<ul>
+						<li>
+							States' % Uinsured and % Women who have not had their recommended mammogram within 2 years. (R = 0.61)
+						</li>
+						<li>
+							States' % Uinsured and %Unable to see the doctor due to cost. (R = 0.74)
+						</li>
+					</ul>
+					<p><strong>Moderate Correlations</strong></p>
+					<ul>
+						<li>
+							States' % Below Poverty and %Unable to see the doctor due to cost. (R = 0.40)
+						</li>
+						<li>
+							States' % Below Poverty and % Self-Reported 'Poor Health'. (R = 0.43)
+						</li>
+					</ul>
+					<p><strong>Slight Correlations</strong></p>
+					<ul>	
+						<li>
+							States' % Unemployement Rate (Civilizan Labor Force) and % Unable to see a doctor due to cost. (R = 0.35)
+						</li>
+					</ul>
+					<br>
+					<h3>Conclusion</h3>
+					<p>Poverty is associated with poorer access to health care, poor utilization of preventative screening
+						and poorer overall health.  As one would likely suspect, being without health insurance makes
+						one less likely to see the doctor due to cost which in turn is associated with poorer overall health.
+						People need health insurance to be healthy! Future studies can explore how state's Medicaid program
+						and other safety net services can mitigate the negative impact of povery on health.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+		<!-- Footer-->
+	<div id="footer">
+		<p> &copy; Copyright DP 2018</p>
+	</div>
+
+</body>
+</html>
